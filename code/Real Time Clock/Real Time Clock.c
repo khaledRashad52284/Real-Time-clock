@@ -15,8 +15,9 @@ int main(void)
 	keypad_vInit();
 	LCD_vInit();
 	seven_seg_vinit('B');
+	/*C0-C5 for the 6 Common cathod 7Seg */
 	SET_BIT(DDRC,0);
-    SET_BIT(DDRC,1);
+  	SET_BIT(DDRC,1);
 	SET_BIT(DDRC,2);
 	SET_BIT(DDRC,3);
 	SET_BIT(DDRC,4);
